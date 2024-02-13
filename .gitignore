@@ -3,7 +3,6 @@
 foo.*
 foo
 a.out
-in
 
 # Prerequisites
 *.d

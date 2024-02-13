@@ -49,7 +49,7 @@ int main()
                     find_edges(grid[i2], j2, l, r);
                     parts.push_back(std::stoi(grid[i2].substr(l, r - l + 1)));
                     // mark off chosen positions
-                    for (int _ = 0; _ <= std::min(r - j + 1, 2); _++)
+                    for (int _ = std::max(l - j + 1, 0); _ <= std::min(r - j + 1, 2); _++)
                     {
                         chosen[i2 - i + 1].set(_);
                     }
